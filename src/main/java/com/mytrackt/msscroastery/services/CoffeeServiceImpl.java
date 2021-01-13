@@ -14,4 +14,16 @@ public class CoffeeServiceImpl implements CoffeeService {
                 .coffeeStyle("Medium Roast")
                 .build();
     }
+
+    @Override
+    public CoffeeDto saveNewCoffee(CoffeeDto coffeeDto) {
+        return CoffeeDto.builder()
+                .id(UUID.randomUUID())
+                .build();
+    }
+
+    @Override
+    public void updateCoffee(UUID coffeeId, CoffeeDto coffeeDto) {
+        //TODO impl
+    }
 }

@@ -6,4 +6,8 @@ import java.util.UUID;
 
 public interface CoffeeService {
     CoffeeDto getCoffeeById(UUID coffeeId);
+
+    CoffeeDto saveNewCoffee(CoffeeDto coffeeDto);
+
+    void updateCoffee(UUID coffeeId, CoffeeDto coffeeDto);
 }
